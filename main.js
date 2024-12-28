@@ -29,4 +29,8 @@ const result = isDGW();
 
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("result").textContent = result ? 'yes' : 'no';
+
+  setInterval(() => {
+    document.querySelector('.flip-box').classList.toggle('flipped');
+  }, 2500);
 });
